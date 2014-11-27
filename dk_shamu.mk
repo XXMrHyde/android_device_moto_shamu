@@ -32,6 +32,12 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
 
+# Kernel inline build
+TARGET_KERNEL_SOURCE := kernel/msm/shamu
+TARGET_KERNEL_CONFIG := shamu_defconfig
+TARGET_VARIANT_CONFIG := shamu_defconfig
+TARGET_SELINUX_CONFIG := shamu_defconfig
+
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
 
