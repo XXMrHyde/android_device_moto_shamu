@@ -38,6 +38,10 @@ TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_VARIANT_CONFIG := shamu_defconfig
 TARGET_SELINUX_CONFIG := shamu_defconfig
 
+# Bootanimation
+PRODUCT_COPY_FILES += \
+  device/moto/shamu/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
 
