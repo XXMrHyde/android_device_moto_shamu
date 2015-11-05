@@ -43,6 +43,11 @@ TARGET_SELINUX_CONFIG := shamu_defconfig
 PRODUCT_COPY_FILES += \
   device/moto/shamu/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
+# libxml2
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libxml2
+
 $(call inherit-product, device/moto/shamu/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
 
