@@ -44,6 +44,6 @@ PRODUCT_COPY_FILES += \
   device/moto/shamu/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 $(call inherit-product, device/moto/shamu/device.mk)
-$(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
 
 
