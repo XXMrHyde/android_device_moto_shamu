@@ -33,7 +33,7 @@ PRODUCT_MODEL := Nexus 6
 PRODUCT_MANUFACTURER := motorola
 
 # Kernel inline build
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.8/bin/"
 TARGET_KERNEL_SOURCE := kernel/msm/shamu
 TARGET_KERNEL_CONFIG := shamu_defconfig
 TARGET_VARIANT_CONFIG := shamu_defconfig
