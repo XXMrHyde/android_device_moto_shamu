@@ -49,6 +49,6 @@ PRODUCT_PACKAGES += \
     libxml2
 
 $(call inherit-product, device/moto/shamu/device.mk)
-$(call inherit-product-if-exists, vendor/motorola/shamu/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/moto/shamu/device-vendor.mk)
 
 

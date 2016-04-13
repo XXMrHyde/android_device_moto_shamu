@@ -138,4 +138,4 @@ EXTENDED_FONT_FOOTPRINT := true
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
 
--include vendor/motorola/shamu/BoardConfigVendor.mk
+-include vendor/moto/shamu/BoardConfigVendor.mk
